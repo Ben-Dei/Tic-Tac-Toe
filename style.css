@@ -22,10 +22,14 @@ td {
     border: 5px solid white; /* 5px dicke weiße Linie nur zwischen den Zellen */
     cursor: pointer;
 }
-.circle {
-    color: blue;
+td:hover:empty {
+    background-color: rgba(255, 255, 255, 0.2); /* Leichter weißer Hintergrund */
 }
-
+.circle {
+    color: #00BEEF; /* Neon-Blau */
+    text-shadow: 0 0 10px #00BEEF, 0 0 20px #00BEEF, 0 0 30px #00BEEF;
+}
 .cross {
-    color: red;
+    color: #FFFF00; /* Neon-Gelb */
+    text-shadow: 0 0 10px #FFFF00, 0 0 20px #FFFF00, 0 0 30px #FFFF00;
 }

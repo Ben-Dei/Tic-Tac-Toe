@@ -1,14 +1,10 @@
 let fields = [
-    'circle',
-    'circle',
-    'circle',
-    null,
-    null,
-    'cross',
-    'cross',
-    null,
-    null
+    null, null, null,
+    null, null, null,
+    null, null, null
 ];
+
+let currentPlayer = 'circle';
 
 function init(){
     render();
@@ -45,8 +41,14 @@ function render() {
 
 // Event-Handler für Klicks auf die Zellen
 function handleClick(index) {
-    if (!fields[index]) {  // Nur leere Felder sind anklickbar
-        fields[index] = 'cross'; // Du könntest dies ändern, um abwechselnd 'circle' und 'cross' zu setzen
+    if (!fields[index]) {  // Nur auf leere Felder klicken
+        fields[index] = currentPlayer; // Setze den aktuellen Spieler (circle oder cross)
+
+        // Nach dem Zug den Spieler wechseln
+        currentPlayer = currentPlayer === 'circle' ? 'cross' : 'circle';
+        
         render(); // Neu rendern, um den aktuellen Zustand zu zeigen
     }
 }
+
+
