@@ -1,0 +1,31 @@
+body {
+    background-color: #323232;
+    font-family: 'Open Sans', sans-serif; /* Open Sans als Schriftart */
+    color: white; /* Standardfarbe des Textes auf der Seite */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+table {
+    border-collapse: collapse; /* Zusammenführen der Zellenränder */
+    background-color: transparent; /* Kein Hintergrund der Tabelle */
+}
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 2em;
+    border: 5px solid white; /* 5px dicke weiße Linie nur zwischen den Zellen */
+    cursor: pointer;
+}
+.circle {
+    color: blue;
+}
+
+.cross {
+    color: red;
+}
